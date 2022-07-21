@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  color: black;
+}
+
+.sidebar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
