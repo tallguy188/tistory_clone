@@ -17,11 +17,29 @@
           <img src="image/search_icon.png" />
         </button>
         <!-- Sidebar -->
-        <button type="button" class="sidebar_btn">
+        <button
+          type="button"
+          class="sidebar_btn"
+          style="cursor: pointer"
+          onclick="openNav()"
+        >
           <img src="image/menu.png" />
         </button>
       </div>
     </header>
+    <div id="sidemenu" class="sideMenu">
+      <a href="javascipt:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="mainMenu">
+        <h3>나의 개발자 일기</h3>
+        <a href="#">ReactJS</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">Javascript</a>
+        <a href="#">자료구조 , 알고리즘</a>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
