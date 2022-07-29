@@ -9,7 +9,7 @@
     <title>나의 개발자 일기</title>
   </head>
   <body>
-    <header class="container">
+    <header class="head">
       <h2 class="title">나의 개발자 일기</h2>
       <div id="info">
         <!-- Search icon-->
@@ -17,20 +17,30 @@
           <img src="image/search_icon.png" />
         </button>
         <!-- Sidebar -->
-        <button
-          type="button"
-          class="sidebar_btn"
-          style="cursor: pointer"
-          onclick="openNav()"
-        >
+        <button type="button" class="sidebar_btn" style="cursor: pointer">
           <img src="image/menu.png" />
         </button>
       </div>
     </header>
+    <div class="container" style="display: none">
+      <div class="popup">
+        <div class="popupheader">
+          <h2 class="popuptitle">나의 개발자 일기</h2>
+          <a href="javascript:void(0)" class="searchclose">&times;</a>
+        </div>
+        <div class="searchcontent">
+          <input
+            type="text"
+            class="word"
+            placeholder="Search"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
     <div id="sidemenu" class="sideMenu">
-      <a href="javascipt:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
       <div class="mainMenu">
         <h3>나의 개발자 일기</h3>
         <a href="#">ReactJS</a>

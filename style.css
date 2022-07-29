@@ -1,13 +1,19 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
 body {
   margin: 0;
 }
 
-.container {
+.head {
   height: 150px;
   border-bottom: 1px solid rgb(216, 205, 205);
 }
 
-.container .title {
+.head .title {
   margin: 0;
   width: 200px;
   height: 50px;
@@ -27,14 +33,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.container .search_btn {
+.head .search_btn {
   right: 125px;
   position: absolute;
   top: 10%;
   margin-top: -12px;
   border: none;
 }
-.container .sidebar_btn {
+.head .sidebar_btn {
   right: 65px;
   position: absolute;
   top: 10%;
@@ -55,7 +61,7 @@ body {
   height: 25px;
 }
 
-.container button {
+.head button {
   background-color: transparent;
 }
 
@@ -66,25 +72,23 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background: gray;
+  background: white;
   overflow-x: hidden;
-  transition: 0.5s;
   padding-top: 60px;
 }
 
 .mainMenu h3 {
   text-align: center;
   letter-spacing: 7px;
-  color: #fff;
+  color: black;
   padding: 20px 0;
 }
 
 .sideMenu a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: block;
-  transition: 0.3s;
   font-size: 18px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -105,7 +109,7 @@ body {
 }
 
 #contentArea {
-  transition: margin-left 0.5s;
+  transition: margin-left;
   padding: 16px;
 }
 
