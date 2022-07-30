@@ -17,30 +17,35 @@
           <img src="image/search_icon.png" />
         </button>
         <!-- Sidebar -->
-        <button type="button" class="sidebar_btn" style="cursor: pointer">
+        <button type="button" class="sidebar_btn">
           <img src="image/menu.png" />
         </button>
       </div>
     </header>
-    <div class="container" style="display: none">
+    <div class="container" id="searchbox" style="display: none">
       <div class="popup">
         <div class="popupheader">
           <h2 class="popuptitle">나의 개발자 일기</h2>
-          <a href="javascript:void(0)" class="searchclose">&times;</a>
+          <a class="searchclose">&times;</a>
         </div>
         <div class="searchcontent">
-          <input
-            type="text"
-            class="word"
-            placeholder="Search"
-            autocomplete="off"
-          />
+          <form>
+            <span class="search_icon">
+              <img src="image/search_icon.png" />
+            </span>
+            <input
+              type="text"
+              class="word"
+              placeholder="Search"
+              autocomplete="off"
+            />
+          </form>
         </div>
       </div>
     </div>
 
     <div id="sidemenu" class="sideMenu">
-      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <a class="closebtn">&times;</a>
       <div class="mainMenu">
         <h3>나의 개발자 일기</h3>
         <a href="#">ReactJS</a>
