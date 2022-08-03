@@ -179,3 +179,11 @@ body {
   font-size: 36px;
   vertical-align: -10px;
 }
+
+input:focus {
+  outline: none;
+}
+
+.word {
+  border: none;
+}
