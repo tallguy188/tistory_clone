@@ -16,7 +16,6 @@ function handleClick(event) {
 }
 
 function openNav() {
-  body.style.filter = "brightness(80%)";
   sidemenu.style.width = "300px";
 }
 
