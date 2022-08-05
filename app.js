@@ -7,6 +7,9 @@ const closeBtn = document.getElementsByClassName("closebtn");
 const sidemenu = document.getElementById("sidemenu");
 const searchbox = document.getElementById("searchbox");
 const searchclose = document.getElementsByClassName("searchclose");
+const word = document.getElementsByClassName("word");
+const clearclose = document.getElementsByClassName("clearclose");
+const form = document.querySelector("form");
 function handlePageClick(event) {
   openNav();
 }
@@ -39,6 +42,22 @@ function closeSearch() {
   }
 }
 
+function clearBox() {
+  word[0].value = "";
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const textvalue = word[0].value;
+  word[0].value = "";
+  console.log(textvalue);
+}
+
+function addtag() {
+  const li = document.createElement("li");
+  const span = document.createElement("span");
+}
+
 if (element) {
   sideBtn[0].addEventListener("click", openNav);
   closeBtn[0].addEventListener("click", closeNav);
@@ -47,4 +66,9 @@ if (element) {
 if (searchbox) {
   searchBtn[0].addEventListener("click", openSearch);
   searchclose[0].addEventListener("click", closeSearch);
+  clearclose[0].addEventListener("click", clearBox);
+}
+
+if (form) {
+  form.addEventListner("submit", handleSubmit);
 }

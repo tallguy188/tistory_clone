@@ -184,6 +184,8 @@ input:focus {
 }
 
 .word {
+  width: 90%;
+
   position: absolute;
   top: 13%;
 
@@ -195,4 +197,16 @@ input:focus {
 .searchform {
   position: relative;
   border-bottom: 1px solid rgb(216, 205, 205);
+}
+
+.clearclose {
+  float: right;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.tagtitle {
+  font-size: 18px;
+  color: #ff567a;
+  margin-top: 100px;
 }
