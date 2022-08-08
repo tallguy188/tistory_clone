@@ -10,9 +10,6 @@ const searchclose = document.getElementsByClassName("searchclose");
 const word = document.getElementsByClassName("word");
 const clearclose = document.getElementsByClassName("clearclose");
 const form = document.querySelector("form");
-function handlePageClick(event) {
-  openNav();
-}
 
 function handleClick(event) {
   console.log(event);
@@ -59,7 +56,6 @@ function addtag() {
 }
 
 if (element) {
-  sideBtn[0].addEventListener("click", openNav);
   closeBtn[0].addEventListener("click", closeNav);
 }
 
@@ -72,3 +68,10 @@ if (searchbox) {
 if (form) {
   form.addEventListner("submit", handleSubmit);
 }
+
+function init() {
+  closeNav();
+
+}
+
+function init();
