@@ -15,11 +15,21 @@ function handleClick(event) {
   console.log(event);
 }
 
+/*function openNav() {
+  if (sidemenu.style.display == "none") {
+    sidemenu.style.display == "block";
+  } else {
+    sidemenu.style.display == "none";
+  }
+}*/
+
 function openNav() {
+  sidemenu.style.display = "block";
   sidemenu.style.width = "300px";
 }
 
 function closeNav() {
+  sidemenu.style.display = "none";
   sidemenu.style.width = "0";
 }
 
@@ -56,6 +66,7 @@ function addtag() {
 }
 
 if (element) {
+  sideBtn[0].addEventListener("click", openNav);
   closeBtn[0].addEventListener("click", closeNav);
 }
 
@@ -66,12 +77,5 @@ if (searchbox) {
 }
 
 if (form) {
-  form.addEventListner("submit", handleSubmit);
+  form.addEventListener("submit", handleSubmit);
 }
-
-function init() {
-  closeNav();
-
-}
-
-function init();

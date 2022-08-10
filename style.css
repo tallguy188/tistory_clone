@@ -87,6 +87,7 @@ body {
 }
 
 .sideMenu {
+  display: none;
   height: 100%;
 
   position: fixed;
