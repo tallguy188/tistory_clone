@@ -10,6 +10,7 @@ const searchclose = document.getElementsByClassName("searchclose");
 const word = document.getElementsByClassName("word");
 const clearclose = document.getElementsByClassName("clearclose");
 const form = document.querySelector("form");
+const tagarea = document.getElementsByClassName("tagarea");
 
 function handleClick(event) {
   console.log(event);
@@ -56,13 +57,19 @@ function clearBox() {
 function handleSubmit(event) {
   event.preventDefault();
   const textvalue = word[0].value;
+  handletag(textvalue);
   word[0].value = "";
-  console.log(textvalue);
 }
 
-function addtag() {
+function handletag(word) {
   const li = document.createElement("li");
   const span = document.createElement("span");
+  span.innerText = word;
+  li.appendChild(span);
+  tagarea[0].appendChild(li);
+}
+function setColor(c) {
+  var color = "#ff567a";
 }
 
 if (element) {
