@@ -1,16 +1,17 @@
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 let element = document.getElementById("info");
-const searchBtn = element.getElementsByClassName("search_btn");
-const sideBtn = element.getElementsByClassName("sidebar_btn");
-const closeBtn = document.getElementsByClassName("closebtn");
+const searchBtn = document.querySelector(".search_btn");
+const sideBtn = document.querySelector(".sidebar_btn");
+const closeBtn = document.querySelector(".closebtn");
 const sidemenu = document.getElementById("sidemenu");
 const searchbox = document.getElementById("searchbox");
-const searchclose = document.getElementsByClassName("searchclose");
-const word = document.getElementsByClassName("word");
-const clearclose = document.getElementsByClassName("clearclose");
+const searchclose = document.querySelector(".searchclose");
+const word = document.querySelector(".word");
+const clearclose = document.querySelector(".clearclose");
 const form = document.querySelector("form");
-const tagarea = document.getElementsByClassName("tagarea");
+const tagarea = document.querySelector(".tagarea");
+const tagList = document.querySelector(".tagList");
 
 function handleClick(event) {
   console.log(event);
@@ -51,14 +52,14 @@ function closeSearch() {
 }
 
 function clearBox() {
-  word[0].value = "";
+  word.value = "";
 }
 
 function handleSubmit(event) {
   event.preventDefault();
-  const textvalue = word[0].value;
+  const textvalue = word.value;
+  word.value = "";
   handletag(textvalue);
-  word[0].value = "";
 }
 
 function handletag(word) {
@@ -66,21 +67,18 @@ function handletag(word) {
   const span = document.createElement("span");
   span.innerText = word;
   li.appendChild(span);
-  tagarea[0].appendChild(li);
-}
-function setColor(c) {
-  var color = "#ff567a";
+  tagList.appendChild(li);
 }
 
 if (element) {
-  sideBtn[0].addEventListener("click", openNav);
-  closeBtn[0].addEventListener("click", closeNav);
+  sideBtn.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
 }
 
 if (searchbox) {
-  searchBtn[0].addEventListener("click", openSearch);
-  searchclose[0].addEventListener("click", closeSearch);
-  clearclose[0].addEventListener("click", clearBox);
+  searchBtn.addEventListener("click", openSearch);
+  searchclose.addEventListener("click", closeSearch);
+  clearclose.addEventListener("click", clearBox);
 }
 
 if (form) {
