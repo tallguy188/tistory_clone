@@ -17,14 +17,6 @@ function handleClick(event) {
   console.log(event);
 }
 
-/*function openNav() {
-  if (sidemenu.style.display == "none") {
-    sidemenu.style.display == "block";
-  } else {
-    sidemenu.style.display == "none";
-  }
-}*/
-
 function openNav() {
   sidemenu.style.display = "block";
   sidemenu.style.width = "300px";
@@ -62,11 +54,12 @@ function handleSubmit(event) {
   handletag(textvalue);
 }
 
-function handletag(word) {
+function handletag(value) {
   const li = document.createElement("li");
   const span = document.createElement("span");
-  span.innerText = word;
+  span.innerText = value;
   li.appendChild(span);
+  span.style.backgroundColor = "rgba(0,0,0,0.3)";
   tagList.appendChild(li);
 }
 

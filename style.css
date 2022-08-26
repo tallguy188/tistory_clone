@@ -210,5 +210,28 @@ input:focus {
 .tagtitle {
   font-size: 18px;
   color: #ff567a;
+  margin: 0px;
+}
+
+.tagarea {
   margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.tagList {
+  width: 100%;
+  height: 50px;
+}
+
+ul {
+  position: relative;
+}
+
+span {
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  color: white;
 }
