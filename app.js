@@ -53,15 +53,15 @@ function handleSubmit(event) {
   word.value = "";
   handletag(textvalue);
 }
-/*
+
 function handletag(value) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   span.innerText = value;
   li.appendChild(span);
-  span.style.backgroundColor = "rgba(0,0,0,0.3)";
   tagList.appendChild(li);
-}*/
+  span.style.color = "black";
+}
 
 if (element) {
   sideBtn.addEventListener("click", openNav);
