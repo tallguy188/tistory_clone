@@ -60,7 +60,7 @@ function handletag(value) {
   span.innerText = value;
   li.appendChild(span);
   tagList.appendChild(li);
-  span.style.color = "black";
+  span.style.color = "#ff567a";
 }
 
 if (element) {

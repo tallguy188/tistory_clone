@@ -211,6 +211,7 @@ input:focus {
   font-size: 18px;
   color: #ff567a;
   margin: 0px;
+  padding-bottom: 50px;
 }
 
 .tagarea {
@@ -241,5 +242,4 @@ span {
 li {
   float: left;
   margin-right: 20px;
-  background-color: white;
 }
