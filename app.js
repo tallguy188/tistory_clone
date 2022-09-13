@@ -12,19 +12,20 @@ const clearclose = document.querySelector(".clearclose");
 const form = document.querySelector("form");
 const tagarea = document.querySelector(".tagarea");
 const tagList = document.querySelector(".tagList");
+const sidebar = document.querySelector(".sidebar");
 
 function handleClick(event) {
   console.log(event);
 }
 
 function openNav() {
-  sidemenu.style.display = "block";
-  sidemenu.style.width = "300px";
+  sidebar.style.width = "300px";
+  sidebar.style.display = "block";
 }
 
 function closeNav() {
-  sidemenu.style.display = "none";
-  sidemenu.style.width = "0";
+  sidebar.style.display = "none";
+  sidebar.style.width = "0";
 }
 
 function openSearch() {
